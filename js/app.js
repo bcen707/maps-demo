@@ -82,8 +82,17 @@ function onMarkerClick() {
 	infoWin.open(map, this);
 }
 
+$.getJSON('http://data.seattle.goc/resource/65fc-btcc.json')
 
+	.done(function(data) {
+		console.log(data);
+	})
+	.fail(function(error) {
 
+	})
+	.always(function() {
+
+	})
 
 
 
